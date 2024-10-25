@@ -2,6 +2,7 @@
 import { useState, useRef } from "react";
 import React from "react";
 import axios from "axios";
+import { CgDarkMode } from "react-icons/cg";
 import { BsFillMicFill, BsFillStopFill } from "react-icons/bs";
 // import { Button } from "./components/ui/button"; // Adjust this path as needed
 import { IoMoon, IoSunny } from "react-icons/io5";
@@ -210,7 +211,7 @@ const AudioRecorder: React.FC = () => {
       </div>
       <div className="bg-white dark:bg-black">
         <button onClick={darkModeHandler} className="mt-10 absolute right-10">
-          {dark ? <IoSunny size={30} /> : <IoMoon size={30} />}
+          {dark ? <IoSunny size={30} /> : <CgDarkMode size={30} />}
         </button>
       </div>
       <div className="dark:bg-black w-[100%] h-[88vh] flex justify-center items-center bg-[url('/cm-banner.jpg')] bg-no-repeat bg-contain bg-center">
